@@ -22,11 +22,11 @@
 
         $sql = "select * from test";
         $result = $conn->query($sql);
-        var_dump($result);
+
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
-                echo "id: " . $row["test-id"]. " - Title: " . $row["title"]. "<br>";
+                echo "<h2>Id: " . $row["test-id"]. " - Title: " . $row["title"]. "</h2><br>";
             }
         } else {
             echo "<h1>0 results</h1>";
