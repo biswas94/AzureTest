@@ -26,7 +26,7 @@
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
-                echo "<h2>Id: " . $row["test-id"]. " - Title: " . $row["title"]. "</h2><br>";
+                echo "<h2>Id: " . $row["test-id"]. " - Title: " . $row["title"]. "</h2>";
             }
         } else {
             echo "<h1>0 results</h1>";
