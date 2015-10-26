@@ -8,7 +8,7 @@
     <?php
         $servername = "eu-cdbr-azure-north-d.cloudapp.net";
         $username = "b0cae9e0d4c5fc";
-        $password = "fdcc89d";
+        $password = "fdcc89df";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password);
@@ -19,7 +19,7 @@
         }
         echo "<h1>Connected successfully</h1>";
 
-        $sql = "SELECT * FROM 'test'";
+        $sql = 'select * from "test"';
         $result = $conn->query($sql);
         var_dump($result);
         if ($result->num_rows > 0) {
