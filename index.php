@@ -8,7 +8,7 @@
     <?php
         $servername = "eu-cdbr-azure-north-d.cloudapp.net";
         $username = "b0cae9e0d4c5fc";
-        $password = "fdcc89df";
+        $password = "fdcc89d";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password);
