@@ -20,7 +20,7 @@
         }
         echo "<h1>Connected successfully</h1>";
 
-        $sql = "select * from 'test'";
+        $sql = "select * from test";
         $result = $conn->query($sql);
         var_dump($result);
         if ($result->num_rows > 0) {
