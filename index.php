@@ -17,7 +17,7 @@
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-        echo "Connected successfully";
+        echo "<h1>Connected successfully</h1>";
 
         $sql = "SELECT 'test-id', 'title' FROM 'test'";
         $result = $conn->query($sql);
