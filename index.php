@@ -19,7 +19,7 @@
         }
         echo "<h1>Connected successfully</h1>";
 
-        $sql = "SELECT 'test-id', 'title' FROM 'test'";
+        $sql = "SELECT * FROM 'test'";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             // output data of each row
