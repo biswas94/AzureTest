@@ -20,9 +20,17 @@
         echo "Connected successfully";
     ?>
     <?php
-        for($i = 0; $i<5; $i++){
-            echo "<H1> It's ALIVE!!!</H1>";
+        $sql = "SELECT test-id, title FROM test";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                echo "id: " . $row["test-id"]. " - Title: " . $row["title"]. "<br>";
+            }
+        } else {
+            echo "0 results";
         }
+        $conn->close();
     ?>
 </body>
 </html>
