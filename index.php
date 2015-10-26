@@ -18,8 +18,7 @@
             die("Connection failed: " . $conn->connect_error);
         }
         echo "Connected successfully";
-    ?>
-    <?php
+
         $sql = "SELECT test-id, title FROM test";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
