@@ -19,7 +19,7 @@
         }
         echo "Connected successfully";
 
-        $sql = "SELECT 'test-id', 'title' FROM test";
+        $sql = "SELECT 'test-id', 'title' FROM 'test'";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             // output data of each row
@@ -27,7 +27,7 @@
                 echo "id: " . $row["test-id"]. " - Title: " . $row["title"]. "<br>";
             }
         } else {
-            echo "0 results";
+            echo "<h1>0 results</h1>";
         }
         $conn->close();
     ?>
