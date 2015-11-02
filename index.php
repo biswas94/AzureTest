@@ -32,6 +32,8 @@
             echo "<h1>0 results</h1>";
         }
         $conn->close();
+
+        setcookie('flavour','chocolate chip');
     ?>
 </body>
 </html>
